@@ -3,7 +3,7 @@ import face_recognition
 import os
 import numpy as np
 
-# --- 1. AŞAMA: ÖĞRETME (EĞİTİM) ---
+#  1. AŞAMA: ÖĞRETME (EĞİTİM) 
 yol = r'C:\PROJE\bilinen_kisiler'
 print("Sistem eğitiliyor, lütfen bekleyin...")
 
@@ -38,7 +38,7 @@ for dosya in os.listdir(yol):
 print(f"\nEğitim tamamlandı. Tanınacak kişiler: {list(set(isimler))}")
 print("-" * 50)
 
-# --- 2. AŞAMA: GERÇEK ZAMANLI TANIMA ---
+#  2. AŞAMA: GERÇEK ZAMANLI TANIMA 
 cap = cv2.VideoCapture(0)
 islem_yapilsin_mi = True 
 
